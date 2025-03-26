@@ -1,7 +1,6 @@
-import React from "react";
-import {Text} from "react-native"
+import React from "react";import { Text } from 'react-native'
 
-export default function SegundoComponente() {
-    return <Text>Segundo Componente</Text>
+export default function SegundoComponente() {  return <Text>Segundo Componente</Text>
+
+
 }
-

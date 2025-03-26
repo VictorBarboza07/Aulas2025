@@ -3,15 +3,35 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import PrimeiroComponente from './componentes/PrimeiroComponente';
 import SegundoComponente from './componentes/SegundoComponente';
-import JavascriptComponente from './componentes/JavaScriptComponente';
+import JavascriptComponente from './componentes/JavascriptComponente';
+import Perfil from './componentes/Perfil';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-    
-    <PrimeiroComponente></PrimeiroComponente>
-    <SegundoComponente></SegundoComponente>
-    <JavascriptComponente></JavascriptComponente>
+
+      <PrimeiroComponente />
+      <SegundoComponente />
+      <JavascriptComponente />
+
+      <Perfil
+        nome="Victor"
+        sobrenome="Barboza"
+        idade={30}
+      />
+
+      <Perfil
+        nome="João"
+        sobrenome="Teste"
+        idade={25}
+      />
+
+      <Perfil
+        nome="Maria"
+        sobrenome="Lima"
+        idade={18}
+      />
 
 
     </View>
@@ -25,4 +45,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-});
+}
+
+);
